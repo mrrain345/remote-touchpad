@@ -70,8 +70,8 @@
 				}
 				else if (e.touches.length === 2) {
 					scroll = true;
-					if (y < -10) { fetch('/click?button=4'); pos_y -= 10; }
-					if (y >  10) { fetch('/click?button=5'); pos_y += 10; }
+					if (y >  10) { fetch('/click?button=4'); pos_y += 10; }
+					if (y < -10) { fetch('/click?button=5'); pos_y -= 10; }
 				}
 
 				preventDefault();
